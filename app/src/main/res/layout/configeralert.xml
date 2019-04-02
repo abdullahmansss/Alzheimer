@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.project.alzheimer.alzheimer.Configeralert"
+    android:weightSum="1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg"
+        android:orientation="horizontal"
+        android:paddingTop="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="0.30">
+
+        <TextView
+            android:id="@+id/lbltitel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Configer Alert"
+
+            android:layout_gravity="left"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        >
+
+
+        <TextView
+            android:id="@+id/lbl_delaytime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delay time"
+
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txt_delaytime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="per minuts"
+            android:layout_weight="1"
+            android:ems="10"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <Button
+            android:id="@+id/btnstartmdcnotify"
+            android:layout_width="150dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:onClick="startmdcnotify"
+
+            android:text="Start Medician"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+
+        <Button
+            android:id="@+id/btnstopmdcnotify"
+            android:layout_width="150dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:onClick="stopmdcnotify"
+
+            android:text="Stop Medician"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <Button
+            android:id="@+id/btnstarttvnotify"
+            android:layout_width="150dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:onClick="starttvnotify"
+
+            android:text="Start TV"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+
+        <Button
+            android:id="@+id/btnstoptvnotify"
+            android:layout_width="150dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:onClick="stoptvnotify"
+
+            android:text="Stop TV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+
+        <Button
+            android:id="@+id/btnstartmealnotify"
+            android:layout_width="150dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:onClick="startmealnotify"
+
+            android:text="Start Meal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+
+        <Button
+            android:id="@+id/btnstopmealnotify"
+            android:layout_width="150dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:onClick="stopmealnotify"
+
+            android:text="Stop Meal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            tools:ignore="OnClick" />
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

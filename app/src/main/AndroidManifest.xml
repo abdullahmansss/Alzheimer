@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.alzheimer.alzheimer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ActivitymainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Insertprofile" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".Tvprograms" />
+        <activity android:name=".MedicineActivity" />
+        <activity android:name=".Mymedicine" />
+        <activity android:name=".Sendlocation" />
+        <activity android:name=".Mytvprogram" />
+        <activity android:name=".Meals" />
+        <activity android:name=".Mymeals" />
+        <activity android:name=".settingdashboard" />
+        <activity android:name=".Configeralert" />
+
+        <service android:name=".notfyservice" />
+        <service android:name=".GPS_Service" />
+        <service android:name=".mdicnotfyservice" />
+        <service android:name=".tvnotfyservice" />
+        <service android:name=".mealnotfyservice" />
+
+        <receiver android:name=".BroadcastReceivers.MedicineReceiver"/>
+
+        <activity android:name=".Confglocation" />
+        <activity android:name=".testime" />
+        <activity android:name=".login" />
+        <activity android:name=".Authentication" />
+        <activity android:name=".Aboutus" />
+        <activity android:name=".Help"></activity>
+    </application>
+
+</manifest>
