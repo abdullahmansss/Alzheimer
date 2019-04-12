@@ -7,7 +7,7 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 
 public class settingdashboard extends AppCompatActivity implements View.OnClickListener  {
-    private CardView btnsetlocation,btnsettvprogram,btnsetmeals,btnsetmedicine,btnmainnoty,btnsecurity;
+    private CardView btnsetlocation,btnsettvprogram,btnsetmeals,btnsetmedicine,btnsecurity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,18 +16,13 @@ public class settingdashboard extends AppCompatActivity implements View.OnClickL
         btnsettvprogram=(CardView)findViewById(R.id.btnsettvprogram);
         btnsetmeals=(CardView)findViewById(R.id.btnsetmeals);
         btnsetmedicine=(CardView)findViewById(R.id.btnsetmedicine);
-        btnmainnoty=(CardView)findViewById(R.id.btnmainnoty);
         btnsecurity=(CardView)findViewById(R.id.btnsecurity);
         btnsetlocation.setOnClickListener(this);
         btnsettvprogram.setOnClickListener(this);
         btnsetmeals.setOnClickListener(this);
         btnsetmedicine.setOnClickListener(this);
-        btnmainnoty.setOnClickListener(this);
         btnsecurity.setOnClickListener(this);
-
     }
-
-
 
     @Override
     public void onClick(View v) {
@@ -45,10 +40,6 @@ public class settingdashboard extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.btnsetmedicine:
                 i=new Intent(this,MedicineActivity.class);
-                startActivity(i);
-                break;
-            case R.id.btnmainnoty:
-                i=new Intent(this,Configeralert.class);
                 startActivity(i);
                 break;
             case R.id.btnsetlocation:

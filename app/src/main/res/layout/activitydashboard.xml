@@ -282,7 +282,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="TV"
+                        android:text="TV / Programs"
                         android:textStyle="bold" />
 
                     <View
@@ -301,54 +301,6 @@
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/btnabout"
-                android:layout_width="160dp"
-                android:layout_height="170dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:background="@drawable/circlegreencolor"
-                        android:padding="10dp"
-                        app:srcCompat="@drawable/ic_info_black_24dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="About Us"
-                        android:textStyle="bold" />
-
-                    <View
-
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_margin="10dp"
-                        android:background="@color/lightgray" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:text="About Us"
-                        android:textColor="@android:color/darker_gray" />
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
 
         </LinearLayout>
 

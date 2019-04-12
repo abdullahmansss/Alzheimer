@@ -43,6 +43,8 @@
         <service android:name=".mealnotfyservice" />
 
         <receiver android:name=".BroadcastReceivers.MedicineReceiver"/>
+        <receiver android:name=".BroadcastReceivers.TvReceiver"/>
+        <receiver android:name=".BroadcastReceivers.MealReceiver"/>
 
         <activity android:name=".Confglocation" />
         <activity android:name=".testime" />

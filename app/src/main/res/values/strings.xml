@@ -4,6 +4,9 @@
     <string name="channel_name">name</string>
     <string name="channel_description">desc</string>
 
-    <string name="channel_name2">name2</string>
-    <string name="channel_description2">desc2</string>
+    <string name="tv_name">tvname</string>
+    <string name="tv_desc">tvdesc</string>
+
+    <string name="meal_name">mealname</string>
+    <string name="meal_desc">mealdesc</string>
 </resources>

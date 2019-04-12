@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Switch;
 
 public class DashboardActivity extends AppCompatActivity implements View.OnClickListener {
-   private CardView btnlocation,btnsetting,btnmeals,btnmedicine,btntvprogram,btnabout;
+   private CardView btnlocation,btnsetting,btnmeals,btnmedicine,btntvprogram;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,14 +18,12 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         btnmeals=(CardView)findViewById(R.id.btnmeals);
         btnmedicine=(CardView)findViewById(R.id.btnmedicine);
         btntvprogram=(CardView)findViewById(R.id.btntvprogram);
-        btnabout=(CardView)findViewById(R.id.btnabout);
 
         btnlocation.setOnClickListener(this);
         btnsetting.setOnClickListener(this);
         btnmeals.setOnClickListener(this);
         btnmedicine.setOnClickListener(this);
         btntvprogram.setOnClickListener(this);
-        btnabout.setOnClickListener(this);
     }
 
     @Override
@@ -54,11 +52,6 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
                 i=new Intent(this,Mytvprogram.class);
                 startActivity(i);
                 break;
-            case R.id.btnabout:
-                i=new Intent(this,Aboutus.class);
-                startActivity(i);
-                break;
-
         }
     }
 }
